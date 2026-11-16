@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Hoppy</title>
+<!-- 웹 체험판 컴퓨터 화면의 QR(get-qr.svg)이 여기로 온다: 폰 종류에 맞는 스토어로 보낸다 (platform/web.ts mountDeskFrame) -->
+<script>
+  var ua = navigator.userAgent;
+  var ios = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+  var url = /Android/i.test(ua)
+    ? 'https://play.google.com/store/apps/details?id=com.doublehash.hoppyenglish&referrer=utm_source%3Dweb_trial%26utm_medium%3Dqr'
+    : ios ? 'https://apps.apple.com/app/id6818402933' : 'https://doublehash.app/hoppy';
+  location.replace(url);
+</script>
+</head>
+<body><p><a href="https://doublehash.app/hoppy">Hoppy</a></p></body>
+</html>
